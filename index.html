@@ -1,44 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet" href="style.css">
-    <title>LIGA DE VETERANOS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puchero FC - Liga de Veteranos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <div class="overlay">
+
     <header>
-        <h1>PUCHERO</h1>
-        <p class="subtitle">Donde la pasión nunca muere</p>
+      <img src="imagen/escudo.png" alt="Escudo Puchero FC" class="logo" />
+      <p class="slogan">Liga de veteranos</p>
+      <h1>TABLA DE POSICIONES</h1>
     </header>
 
-    <section id="posiciones">
-        <h2>Tabla de posiciones</h2>
+    <!-- Tabla de posiciones -->
+    <section class="tabla-container">
+      <table>
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>EQUIPO</th>
+            <th>PTS</th>
+            <th>PJ</th>
+            <th>G</th>
+            <th>E</th>
+            <th>P</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="pos">1</td><td>LOS 100</td><td>15</td><td>7</td><td>8</td><td>3</td><td>0</td></tr>
+          <!-- ... resto igual -->
+        </tbody>
+      </table>
     </section>
 
-    <section id="ultimas-fechas">
-        <h2>ultimas-fechas</h2>
-        <h3>siguientes-fechas</h3>
+    <!-- Tabla de goleadores -->
+    <section class="tabla-container">
+      <h2>GOLEADORES</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>EQUIPO</th>
+            <th>NOMBRE</th>
+            <th>GOLES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>LOS 100</td><td>TITO</td><td>15</td></tr>
+          <!-- ... resto igual -->
+        </tbody>
+      </table>
     </section>
 
-    <section id="goleadores">
-        <h2>goleadores</h2>
+    <!-- Tabla de amonestados -->
+    <section class="tabla-container">
+      <h2>AMONESTADOS</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>EQUIPO</th>
+            <th>JUGADOR</th>
+            <th>AMARILLAS</th>
+            <th>ROJAS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>LOS PIBES</td><td>JUAN</td><td>2</td><td>1</td></tr>
+          <tr><td>GUADALUPE</td><td>RAMIRO</td><td>3</td><td>0</td></tr>
+        </tbody>
+      </table>
     </section>
 
-    <section id="tarjetas">
-        <h2>tarjetas amarillas</h2>
-        <h3>tarjetas rojas</h3>
+    <!-- Última fecha -->
+   <section class="tabla-container">
+    <h2>Fixture completo</h2>
+    <select id="fechaSelector" onchange="mostrarFecha()">…</select>
+    <div id="contenedorFechas">
+      <div id="fecha1" class="fecha">
+        <h3>Fecha 1</h3>
+        <input type="text" value="LOS PIBES 1 - 3 LOS 100">
+        <input type="text" value="PALOMO 0 - 0 SENIOR">
+      </div>
+      <!-- hasta fecha10 similar -->
+    </div>
+  </section>
+
+
+    <!-- Fechas completas -->
+    <section class="tabla-container">
+      <h2>FIXTURE COMPLETO</h2>
+      <select id="fechaSelector" onchange="mostrarFecha()">
+        <option value="fecha1">Fecha 1</option>
+        <option value="fecha2">Fecha 2</option>
+        <option value="fecha3">Fecha 3</option>
+        <option value="fecha4">Fecha 4</option>
+        <option value="fecha5">Fecha 5</option>
+        <option value="fecha6">Fecha 6</option>
+        <option value="fecha7">Fecha 7</option>
+        <option value="fecha8">Fecha 8</option>
+        <option value="fecha9">Fecha 9</option>
+        <option value="fecha10">Fecha 10</option>
+      </select>
+
+      <div id="contenedorFechas">
+        <div id="fecha1" class="fecha">
+          <h3>Fecha 1</h3>
+          <p>LOS PIBES 1 - 3 LOS 100</p>
+          <p>PALOMO 0 - 0 SENIOR</p>
+          <p>GUADALUPE 2 - 2 LA BANDA</p>
+        </div>
+
+        <div id="fecha2" class="fecha" style="display:none;">
+          <h3>Fecha 2</h3>
+          <p>LOS 5 DIGO 2 - 2 PALOMO</p>
+          <p>GUADALUPE 3 - 1 LAS FLORES</p>
+        </div>
+
+        <div id="fecha3" class="fecha" style="display:none;">
+          <h3>Fecha 3</h3>
+          <p>LOS 100 2 - 1 LOS 5 DIGO</p>
+          <p>SENIOR 1 - 3 LA BANDA</p>
+        </div>
+
+        <!-- Fechas vacías para que edites -->
+        <div id="fecha4" class="fecha" style="display:none;">
+          <h3>Fecha 4</h3>
+          <p>Editar partidos aquí...</p>
+        </div>
+        <!-- Más fechas iguales -->
+      </div>
     </section>
 
-    <section id="fotos">
-        <h2>fotos</h2>
-    </section>
+  </div>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-    </section>
-
-    <script src="app.js"></script>
+  <script>
+    function mostrarFecha() {
+      let seleccion = document.getElementById("fechaSelector").value;
+      let fechas = document.querySelectorAll(".fecha");
+      fechas.forEach(f => f.style.display = "none");
+      document.getElementById(seleccion).style.display = "block";
+    }
+  </script>
+  <!-- Contacto -->
+  <div class="contacto">
+    <h2>Contacto</h2>
+    <p>
+      <a href="https://instagram.com/tuCuenta">Instagram</a> |
+      <a href="https://facebook.com/tuPagina">Facebook</a> |
+      <a href="https://wa.me/tuNumero">WhatsApp</a>
+    </p>
+    <p>Dirección: Calle Falsa 123, Ciudad</p>
+  </div>
+</div>
 </body>
 </html>

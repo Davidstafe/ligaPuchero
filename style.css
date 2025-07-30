@@ -1,0 +1,107 @@
+:root {
+  --clr-gold: #d4af37;
+  --bg-overlay: rgba(0,0,0,0.7);
+  --fs-h1: clamp(1.8rem, 2.5vw, 2.5rem);
+  --fs-h2: clamp(1.4rem, 2vw, 2rem);
+  --fs-table: clamp(0.9rem, 1.2vw, 1.1rem);
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('imagen/fondo.png') center/cover no-repeat fixed;
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.overlay {
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  background-color: var(--bg-overlay);
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo { width: 80px; margin-bottom: 0.5rem; }
+
+.slogan { color: var(--clr-gold); font-size: var(--fs-h2); margin: 0; }
+
+h1 { font-size: var(--fs-h1); letter-spacing: 1px; }
+h2 { font-size: var(--fs-h2); margin-top: 1.5rem; }
+
+.tabla-container {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  font-size: var(--fs-table);
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead th {
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 0.8rem;
+}
+
+tbody tr:nth-child(even) { background: rgba(255,255,255,0.05); }
+
+tbody td, th {
+  padding: 0.6rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+tbody tr:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+.pos { color: var(--clr-gold); font-weight: bold; }
+
+select {
+  padding: 0.6rem;
+  font-size: var(--fs-table);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fecha input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: var(--fs-table);
+  margin-bottom: 0.3rem;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.fecha input[type="text"]::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.contacto {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: var(--fs-table);
+}
+
+.contacto a {
+  color: var(--clr-gold);
+  margin: 0 1rem;
+  text-decoration: none;
+}
