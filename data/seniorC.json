@@ -1,0 +1,22 @@
+{
+  "nombre": "Liga Puchero",
+  "tabla": [
+    { "pos": 1, "equipo": "Los Pibes", "pj": 10, "pts": 22, "gf": 31, "gc": 15, "dif":11},
+    { "pos": 2, "equipo": "La 12", "pj": 10, "pts": 19, "gf": 27, "gc": 20, "dif":2}
+  ],
+  "goleadores": [
+    { "nombre": "Franco López", "goles": 12 },
+    { "nombre": "Gonza Ríos", "goles": 9 }
+  ],
+  "habilitados": [
+    "Jugador A - Los Pibes",
+    "Jugador B - La 12"
+  ],
+  "expulsados": [
+    "Jugador C - La 12 (Rojas)"
+  ],
+  "resultados": [
+    { "fecha": "2025-11-02", "local": "Los Pibes", "visitante": "La 12", "score": "3-1" },
+    { "fecha": "2025-11-09", "local": "Equipo X", "visitante": "Equipo Y", "score": "2-2" }
+  ]
+}

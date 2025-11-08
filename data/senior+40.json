@@ -1,0 +1,21 @@
+{
+  "tabla": [
+    { "pos": 1, "equipo": "JUANILLO", "pts": 20, "pj": 11, "g": 9, "e": 2, "p": 0 },
+    { "pos": 2, "equipo": "DESPENSA EL NENE", "pts": 17, "pj": 11, "g": 8, "e": 1, "p": 2 },
+    { "pos": 3, "equipo": "EL TITAN", "pts": 16, "pj": 11, "g": 7, "e": 2, "p": 2 },
+    { "pos": 4, "equipo": "PALOMO", "pts": 16, "pj": 11, "g": 6, "e": 4, "p": 1 },
+    { "pos": 5, "equipo": "AMIGO YUDICA", "pts": 16, "pj": 11, "g": 6, "e": 4, "p": 1 },
+    { "pos": 6, "equipo": "SIN CODIGO", "pts": 11, "pj": 11, "g": 5, "e": 1, "p": 5 },
+    { "pos": 7, "equipo": "RODADO ENERGY", "pts": 11, "pj": 11, "g": 4, "e": 3, "p": 4 },
+    { "pos": 8, "equipo": "LOS AMIGOS", "pts": 9, "pj": 11, "g": 2, "e": 5, "p": 4 },
+    { "pos": 9, "equipo": "DON LORENZO", "pts": 9, "pj": 11, "g": 4, "e": 1, "p": 6 },
+    { "pos": 10, "equipo": "RECORD A VICKY", "pts": 7, "pj": 11, "g": 2, "e": 3, "p": 6 },
+    { "pos": 11, "equipo": "LOS DE SIEMPRE", "pts": 5, "pj": 11, "g": 3, "e": 1, "p": 7 },
+    { "pos": 12, "equipo": "PEÑAROL", "pts": 5, "pj": 11, "g": 2, "e": 1, "p": 8 },
+    { "pos": 13, "equipo": "NUEVA ESPERANZA", "pts": 5, "pj": 11, "g": 2, "e": 1, "p": 8 },
+    { "pos": 14, "equipo": "LOS HORNOS +40", "pts": 7, "pj": 11, "g": 2, "e": 1, "p": 8 }
+  ],
+  "goleadores": [],
+  "amonestados": [],
+  "fixture": []
+}
