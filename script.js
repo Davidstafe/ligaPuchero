@@ -1,12 +1,11 @@
 function mostrarFecha() {
-  let seleccion = document.getElementById("fechaSelector").value; // obtiene qué fecha elegiste
-  let fechas = document.querySelectorAll(".fecha"); // agarra todas las cajas de fechas
-  fechas.forEach(f => f.style.display = "none"); // las oculta todas
-  document.getElementById(seleccion).style.display = "block"; // muestra solo la elegida
+  let seleccion = document.getElementById("fechaSelector").value;
+  let fechas = document.querySelectorAll(".fecha");
+  fechas.forEach(f => f.style.display = "none");
+  document.getElementById(seleccion).style.display = "block";
 }
-// === CONFIGURACIÓN INICIAL ===
 
-// Oculta todas las secciones de datos hasta que el usuario elija una liga
+// === CONFIGURACIÓN INICIAL ===
 document.addEventListener("DOMContentLoaded", () => {
   ocultarSecciones();
 });
@@ -19,6 +18,7 @@ function ocultarSecciones() {
 // === MOSTRAR UNA LIGA ===
 function mostrarLiga(nombreLiga) {
   ocultarSecciones(); // Limpia lo anterior
+  document.querySelector("header").style.display = "none"; // oculta el inicio
   cargarDatos(nombreLiga);
 }
 
@@ -79,4 +79,14 @@ function mostrarFixture(fixture) {
     </div>
   `).join("");
   document.querySelector("section:nth-of-type(4)").style.display = "block";
+}
+
+// === MOSTRAR INICIO ===
+function mostrarInicio() {
+  ocultarSecciones();
+  const header = document.querySelector("header");
+  header.style.display = "block";
+
+  const quienesSomos = document.querySelector(".quienes-somos");
+  if (quienesSomos) quienesSomos.style.display = "block";
 }
