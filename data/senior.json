@@ -1,21 +1,47 @@
 {
   "tabla": [
-    { "pos": 1, "equipo": "JUANILLO", "pts":         22, "pj": 12, "g": 10, "e": 2, "p": 0,"dif":24 },
-    { "pos": 2, "equipo": "EL TITAN", "pts":         18, "pj": 12, "g": 8, "e": 2, "p": 2 ,"dif":20},
-    { "pos": 3, "equipo": "AMIGO YUDICA", "pts":     18, "pj": 12, "g": 7, "e": 4, "p": 1 ,"dif":11},
-    { "pos": 4, "equipo": "DESPENSA EL NENE", "pts": 18, "pj": 12, "g": 9, "e": 0, "p": 3 ,"dif":10},
-    { "pos": 5, "equipo": "PALOMO", "pts":           16, "pj": 12, "g": 6, "e": 4, "p": 2 ,"dif":10},
-    { "pos": 6, "equipo": "RODADO ENERGY", "pts":    13, "pj": 12, "g": 5, "e": 3, "p": 4,"dif":5 },
-    { "pos": 7, "equipo": "SIN CODIGO", "pts":       11, "pj": 12, "g": 5, "e": 1, "p": 6,"dif":2 },
-    { "pos": 8, "equipo": "LOS AMIGOS", "pts":       11, "pj": 12, "g": 3, "e": 5, "p": 4,"dif":1 },
-    { "pos": 9, "equipo": "RECORD A VICKY", "pts":   9, "pj": 12, "g": 3, "e": 3, "p": 6 ,"dif":-1},
-    { "pos": 10, "equipo": "DON LORENZO", "pts":     9, "pj": 12, "g": 4, "e": 1, "p": 7 ,"dif":-9},
-    { "pos": 11, "equipo": "LOS DE SIEMPRE", "pts":  7, "pj": 12, "g": 3, "e": 1, "p": 8,"dif":-11 },
-    { "pos": 12, "equipo": "PEÑAROL", "pts":         6, "pj": 12, "g":3, "e": 0, "p": 9 ,"dif":-17},
-    { "pos": 13, "equipo": "NUEVA ESPERANZA", "pts": 5, "pj": 12, "g": 2, "e": 1, "p": 9,"dif":-18 },
-    { "pos": 14, "equipo": "LOS HORNOS +40", "pts":  0, "pj": 0, "g": 0, "e": 0, "p": 0 ,"dif":0}
+    { "pos": 1, "equipo": "JUANILLO", "pts":         22, "pj": 12, "g": 10, "e": 2, "p": 0,"df":24 },
+    { "pos": 2, "equipo": "EL TITAN", "pts":         18, "pj": 12, "g": 8, "e": 2, "p": 2 ,"df":20},
+    { "pos": 3, "equipo": "AMIGO YUDICA", "pts":     18, "pj": 12, "g": 7, "e": 4, "p": 1 ,"df":11},
+    { "pos": 4, "equipo": "DESPENSA EL NENE", "pts": 18, "pj": 12, "g": 9, "e": 0, "p": 3 ,"df":10},
+    { "pos": 5, "equipo": "PALOMO", "pts":           16, "pj": 12, "g": 6, "e": 4, "p": 2 ,"df":10},
+    { "pos": 6, "equipo": "RODADO ENERGY", "pts":    13, "pj": 12, "g": 5, "e": 3, "p": 4,"df":5 },
+    { "pos": 7, "equipo": "SIN CODIGO", "pts":       11, "pj": 12, "g": 5, "e": 1, "p": 6,"df":2 },
+    { "pos": 8, "equipo": "LOS AMIGOS", "pts":       11, "pj": 12, "g": 3, "e": 5, "p": 4,"df":1 },
+    { "pos": 9, "equipo": "RECORD A VICKY", "pts":   9, "pj": 12, "g": 3, "e": 3, "p": 6 ,"df":-1},
+    { "pos": 10, "equipo": "DON LORENZO", "pts":     9, "pj": 12, "g": 4, "e": 1, "p": 7 ,"df":-9},
+    { "pos": 11, "equipo": "LOS DE SIEMPRE", "pts":  7, "pj": 12, "g": 3, "e": 1, "p": 8,"df":-11 },
+    { "pos": 12, "equipo": "PEÑAROL", "pts":         6, "pj": 12, "g":3, "e": 0, "p": 9 ,"df":-17},
+    { "pos": 13, "equipo": "NUEVA ESPERANZA", "pts": 5, "pj": 12, "g": 2, "e": 1, "p": 9,"df":-18 },
+    { "pos": 14, "equipo": "LOS HORNOS +40", "pts":  0, "pj": 0, "g": 0, "e": 0, "p": 0 ,"df":0}
   ],
-  "goleadores": [],
-  "amonestados": [],
-  "fixture": []
-}
+  "goleadores": [
+    { "nombre": "BUSTOS DIEGO", "equipo": "EL TITAN", "goles": 11 },
+    { "nombre": "CONDE JOSE", "equipo": "EL TITAN", "goles": 9 }
+  ],
+  "expulsados": [
+    { "jugador": "FALCON, RUBEN" ,"equipo" : "DESPENSA EL NENE"},
+        { "jugador": "VEGA, RODRIGO" ,"equipo" : "LOS AMIGOS"},
+        { "jugador": "DIAZ, RUBEN" ,"equipo" : "DON LORENZO"},
+        { "jugador": "FRANCO, DARIO" ,"equipo" : "DON LORENZO"},
+        { "jugador": "LAUREANO, JOSE" ,"equipo" : "DON LORENZO"},
+        { "jugador": "MOREIRA, IVAN" ,"equipo" : "RECORD VICKY"},
+        { "jugador": "BORGARIN, RAMON" ,"equipo" : "RECO"}
+  ],
+"resultados": [
+  {
+    "fecha": "Última fecha",
+    "partidos": [
+      "EL TITAN 3 - 0 SIN CÓDIGO",
+      "LOS DE SIEMPRE 0 - 6 ENERGY",
+      "LOS AMIGOS 2 - 0 LOS HORNOS",
+      "DON LORENZO 2 - 4 RECORD VICKY",
+      "DESPENSA EL NENE 0 - 3 AMIGO YUDICA",
+      "NUEVA ESPERANZA 2 - 3 PEÑAROL",
+      "JUANILLO 2 - 1 PALOMO"
+    ]
+  }
+]
+
+
+}  

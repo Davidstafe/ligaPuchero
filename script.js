@@ -1,28 +1,39 @@
-function mostrarFecha() {
-  let seleccion = document.getElementById("fechaSelector").value;
-  let fechas = document.querySelectorAll(".fecha");
-  fechas.forEach(f => f.style.display = "none");
-  document.getElementById(seleccion).style.display = "block";
-}
-
 // === CONFIGURACIÓN INICIAL ===
 document.addEventListener("DOMContentLoaded", () => {
   ocultarSecciones();
+  mostrarInicio(); // Al cargar, muestra solo "Quiénes Somos"
 });
 
+// === FUNCIONES BASE ===
 function ocultarSecciones() {
   const secciones = document.querySelectorAll(".tabla-container");
   secciones.forEach(sec => sec.style.display = "none");
 }
 
+function ocultarQuienesSomos() {
+  const quienesSomos = document.getElementById("quienesSomos");
+  if (quienesSomos) quienesSomos.style.display = "none";
+}
+
+function mostrarQuienesSomos() {
+  const quienesSomos = document.getElementById("quienesSomos");
+  if (quienesSomos) quienesSomos.style.display = "flex";
+}
+
 // === MOSTRAR UNA LIGA ===
 function mostrarLiga(nombreLiga) {
-  ocultarSecciones(); // Limpia lo anterior
-  document.querySelector("header").style.display = "none"; // oculta el inicio
+  ocultarSecciones();
+  ocultarQuienesSomos();
   cargarDatos(nombreLiga);
 }
 
-// === CARGAR DATOS DESDE EL JSON ===
+// === VOLVER AL INICIO ===
+function mostrarInicio() {
+  ocultarSecciones();
+  mostrarQuienesSomos();
+}
+
+// === CARGAR DATOS DESDE JSON ===
 async function cargarDatos(nombreLiga) {
   try {
     const response = await fetch(`data/${nombreLiga}.json`);
@@ -30,8 +41,8 @@ async function cargarDatos(nombreLiga) {
 
     mostrarTabla(datos.tabla);
     mostrarGoleadores(datos.goleadores);
-    mostrarAmonestados(datos.amonestados);
-    mostrarFixture(datos.fixture);
+    mostrarExpulsados(datos.expulsados);
+    mostrarResultados(datos.resultados);
   } catch (error) {
     console.error("Error al cargar los datos:", error);
   }
@@ -39,7 +50,10 @@ async function cargarDatos(nombreLiga) {
 
 // === FUNCIONES PARA MOSTRAR DATOS ===
 function mostrarTabla(tabla) {
-  const tbody = document.querySelector("section:nth-of-type(1) tbody");
+  const seccion = document.querySelectorAll(".tabla-container")[0];
+  const tbody = seccion.querySelector("tbody");
+  if (!tbody) return;
+
   tbody.innerHTML = tabla.map(fila => `
     <tr>
       <td>${fila.pos}</td>
@@ -51,42 +65,45 @@ function mostrarTabla(tabla) {
       <td>${fila.p}</td>
       <td>${fila.df}</td>
     </tr>`).join("");
-  document.querySelector("section:nth-of-type(1)").style.display = "block";
+
+  seccion.style.display = "block";
 }
 
 function mostrarGoleadores(goleadores) {
-  const tbody = document.querySelector("section:nth-of-type(2) tbody");
+  const seccion = document.querySelectorAll(".tabla-container")[1];
+  const tbody = seccion.querySelector("tbody");
+  if (!tbody) return;
+
   tbody.innerHTML = goleadores.map(g => `
     <tr><td>${g.nombre}</td><td>${g.equipo}</td><td>${g.goles}</td></tr>
   `).join("");
-  document.querySelector("section:nth-of-type(2)").style.display = "block";
+
+  seccion.style.display = "block";
 }
 
-function mostrarAmonestados(amonestados) {
-  const tbody = document.querySelector("section:nth-of-type(3) tbody");
-  tbody.innerHTML = amonestados.map(a => `
-    <tr><td>${a.equipo}</td><td>${a.jugador}</td><td>${a.amarillas}</td><td>${a.rojas}</td></tr>
+function mostrarExpulsados(expulsados) {
+  const seccion = document.querySelectorAll(".tabla-container")[2];
+  const tbody = seccion.querySelector("tbody");
+  if (!tbody) return;
+
+  tbody.innerHTML = expulsados.map(e => `
+    <tr><td>${e.equipo}</td><td>${e.jugador}</td></tr>
   `).join("");
-  document.querySelector("section:nth-of-type(3)").style.display = "block";
+
+  seccion.style.display = "block";
 }
 
-function mostrarFixture(fixture) {
+function mostrarResultados(resultados) {
+  const seccion = document.querySelectorAll(".tabla-container")[3];
   const contenedor = document.getElementById("contenedorFechas");
-  contenedor.innerHTML = fixture.map(f => `
+  if (!contenedor) return;
+
+  contenedor.innerHTML = resultados.map(f => `
     <div class="fecha">
       <h3>Fecha ${f.fecha}</h3>
       ${f.partidos.map(p => `<p>${p}</p>`).join("")}
     </div>
   `).join("");
-  document.querySelector("section:nth-of-type(4)").style.display = "block";
-}
 
-// === MOSTRAR INICIO ===
-function mostrarInicio() {
-  ocultarSecciones();
-  const header = document.querySelector("header");
-  header.style.display = "block";
-
-  const quienesSomos = document.querySelector(".quienes-somos");
-  if (quienesSomos) quienesSomos.style.display = "block";
+  seccion.style.display = "block";
 }

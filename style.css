@@ -105,3 +105,92 @@ select {
   margin: 0 1rem;
   text-decoration: none;
 }
+/* === BOTÓN DE INICIO === */
+.boton-inicio {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--clr-gold);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+
+.boton-inicio:hover {
+  background: #ffd700;
+}
+/* === MENÚ DE LIGAS E INICIO === */
+.ligas-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.ligas-menu button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--clr-gold);
+  color: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.ligas-menu button:hover {
+  background: var(--clr-gold);
+  color: black;
+}
+
+/* estilo especial para el botón de inicio */
+.btn-inicio {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid var(--clr-gold);
+  color: var(--clr-gold);
+}
+
+.btn-inicio:hover {
+  background: var(--clr-gold);
+  color: black;
+}
+
+/*tarjeta quienes somos?"///*/
+.quienes-somos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: transparent; /* elimina fondo blanco */
+  color: white; /* o el color de texto que uses */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quienes-somos img {
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.quienes-somos .texto {
+  width: 50%;
+}
+
+.quienes-somos h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.quienes-somos p {
+  line-height: 1.5;
+  font-size: 1.1em;
+}
