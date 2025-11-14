@@ -1,22 +1,50 @@
 {
-  "nombre": "Liga Puchero",
   "tabla": [
-    { "pos": 1, "equipo": "Los Pibes", "pj": 10, "pts": 22, "gf": 31, "gc": 15, "dif":11},
-    { "pos": 2, "equipo": "La 12", "pj": 10, "pts": 19, "gf": 27, "gc": 20, "dif":2}
+    { "pos": 1, "equipo": "ENERGY B",         "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0, "df": 5 },
+    { "pos": 2, "equipo": "TORRE 7",          "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0 ,"df": 4},
+    { "pos": 3, "equipo": "LOS NARANJOS",     "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0 ,"df": 2},
+    { "pos": 4, "equipo": "BARBIERI VIDRIOS", "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0 ,"df": 2},
+    { "pos": 5, "equipo": "KIOSKO PAOLA",     "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0 ,"df": 1},
+    { "pos": 6, "equipo": "POLI B",           "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0, "df": 1 },
+    { "pos": 7, "equipo": "ATLAS",            "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0, "df": 1 },
+    { "pos": 8, "equipo": "DIETETICA LEONEL", "pts":  1, "pj": 1, "g": 0, "e": 1, "p": 0, "df": 0 },
+    { "pos": 9, "equipo": "TEAM LA ROCA",     "pts":  1, "pj": 1, "g": 0, "e": 1, "p": 0,"df":  0},
+    { "pos": 10, "equipo": "GUADALUPE",       "pts":  1, "pj": 1, "g": 0, "e": 1, "p": 0,"df":  0},
+    { "pos": 11, "equipo": "BON CAR",         "pts":  1, "pj": 1, "g": 0, "e": 1, "p": 0,"df":  0},
+    { "pos": 12, "equipo": "LOS CANARIOS",    "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-1},
+    { "pos": 13, "equipo": "MEC DENTAL",      "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-1 },
+    { "pos": 14, "equipo": "MALVINAS",        "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-2},
+    { "pos": 15, "equipo": "DINOSAURIO",      "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-2},
+    { "pos": 16, "equipo": "H.LEGUIZAMON",    "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-2},
+    { "pos": 17, "equipo": "AMIGOS DE CUCHI", "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-2},
+    { "pos": 18, "equipo": "SUTER",           "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-4},
+    { "pos": 19, "equipo": "TALLER RETAMOSO", "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-5}
   ],
   "goleadores": [
-    { "nombre": "Franco López", "goles": 12 },
-    { "nombre": "Gonza Ríos", "goles": 9 }
-  ],
-  "habilitados": [
-    "Jugador A - Los Pibes",
-    "Jugador B - La 12"
+    { "nombre": "MENA LORENZO", "equipo": "LOS NARANJOS", "goles": 25 },
+    { "nombre": "OJEDA ALBERTO", "equipo": "LOS CANARIOS", "goles": 25 },
+    { "nombre": "LEZCANO CARLOS", "equipo": "ALMC GAUCHITO GIL", "goles": 22 }
   ],
   "expulsados": [
-    "Jugador C - La 12 (Rojas)"
+{ "jugador": "RAMOS" ,"equipo" : "LOS DE SIEMPRE"}
   ],
-  "resultados": [
-    { "fecha": "2025-11-02", "local": "Los Pibes", "visitante": "La 12", "score": "3-1" },
-    { "fecha": "2025-11-09", "local": "Equipo X", "visitante": "Equipo Y", "score": "2-2" }
-  ]
-}
+"resultados": [
+  {
+    "fecha": "Última fecha",
+    "partidos": [
+      "KIOSKO PAOLA 6 - 0 LOS CANARIOS",
+      "MEC FINUCCI 1 - 2 POLI B",
+      "DIETETICA LEONEL 3 - 1 TEAM ROCA",
+      "LOS NARANJOS 2 - 0 MALVINAS",
+      "GUADALUPE 3 - 0 BON CAR",
+      "T RETAMOSO 2 - 6 ENERGY B ",
+      "ATLAS 2 - 1 H.LEGUIZAMON",
+      "DINOSAURIO 1 - 2 BARBIERI VIDRIOS",
+      "SUTER 2 - 5 TORRE 7"
+    
+    ]
+  }
+]
+
+
+}  

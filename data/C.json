@@ -1,22 +1,50 @@
 {
-  "nombre": "Liga Puchero",
   "tabla": [
-    { "pos": 1, "equipo": "Los Pibes", "pj": 10, "pts": 22, "gf": 31, "gc": 15, "dif":11},
-    { "pos": 2, "equipo": "La 12", "pj": 10, "pts": 19, "gf": 27, "gc": 20, "dif":2}
+    { "pos": 1, "equipo": "RODADO ENERGY ",      "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0, "df": 7 },
+    { "pos": 2, "equipo": "LOS CANILLITAS",     "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0 ,"df": 3},
+    { "pos": 3, "equipo": "LEGENDARIOS",         "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0 ,"df": 2},
+    { "pos": 4, "equipo": "GRUPO NAT",           "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0 ,"df": 2},
+    { "pos": 5, "equipo": "JUANILLO",            "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0 ,"df": 2},
+    { "pos": 6, "equipo": "VERE VERE",           "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0, "df": 2 },
+    { "pos": 7, "equipo": "PRAXIS",              "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0, "df": 1 },
+    { "pos": 8, "equipo": "ALMAC GAUCHITO GIL",  "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0, "df": 1 },
+    { "pos": 9, "equipo": "LA TIA",              "pts":  2, "pj": 1, "g": 1, "e": 0, "p": 0,"df":  1},
+    { "pos": 10, "equipo": "PAN INTERNACIONAL",  "pts":  1, "pj": 1, "g": 0, "e": 1, "p": 0,"df":  0},
+    { "pos": 11, "equipo": "HL REFRIGERACION",   "pts":  1, "pj": 1, "g": 0, "e": 1, "p": 0,"df":  0},
+    { "pos": 12, "equipo": "REAL BAÑIL",         "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":0},
+    { "pos": 1, "equipo": "LA ROSARITO",         "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-1 },
+    { "pos": 14, "equipo": "ASTON BIRRA",        "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-1},
+    { "pos": 14, "equipo": "GIULIANO",           "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-2},
+    { "pos": 14, "equipo": "REC A POLI A",       "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-2},
+    { "pos": 14, "equipo": "LOS HORNOS +50",     "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-2},
+    { "pos": 14, "equipo": "REAL SOCIEDAD",      "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-3},
+    { "pos": 14, "equipo": "AMIGOS PABLITO",     "pts":  0, "pj": 1, "g": 0, "e": 0, "p": 1,"df":-7}
   ],
   "goleadores": [
-    { "nombre": "Franco López", "goles": 12 },
-    { "nombre": "Gonza Ríos", "goles": 9 }
-  ],
-  "habilitados": [
-    "Jugador A - Los Pibes",
-    "Jugador B - La 12"
+    { "nombre": "MENA LORENZO", "equipo": "LOS NARANJOS", "goles": 25 },
+    { "nombre": "OJEDA ALBERTO", "equipo": "LOS CANARIOS", "goles": 25 },
+    { "nombre": "LEZCANO CARLOS", "equipo": "ALMC GAUCHITO GIL", "goles": 22 }
   ],
   "expulsados": [
-    "Jugador C - La 12 (Rojas)"
+{ "jugador": "RAMOS" ,"equipo" : "LOS DE SIEMPRE"}
   ],
-  "resultados": [
-    { "fecha": "2025-11-02", "local": "Los Pibes", "visitante": "La 12", "score": "3-1" },
-    { "fecha": "2025-11-09", "local": "Equipo X", "visitante": "Equipo Y", "score": "2-2" }
-  ]
-}
+"resultados": [
+  {
+    "fecha": "Última fecha",
+    "partidos": [
+      "LA ROSARITO 1 - 2 PRAXIS",
+      "GRUPO NAT 3 - 1POLI B",
+      "LOS HORNOS 0 - 2 JUANILLO",
+      "REAL SOCIEDAD 0 - 3 LOS CANILLITAS",
+      "AMIGOS PABLITO 0 - 7 ENERGY",
+      "GIULIANO 0 - 2 LEGENDARIOS",
+      "REAL BAÑIL 0 - 1 LA TIA",
+      "GAUCHITO GIL 1 - 0 ASTON BIRRA",
+      "HL REFRIGERACION 0 - 0 PAN INTERNACIONAL"
+    
+    ]
+  }
+]
+
+
+}  
